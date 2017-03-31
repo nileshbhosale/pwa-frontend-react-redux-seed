@@ -1,9 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { ProgressBar } from "react-bootstrap";
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
+
+import '../style/main.css';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -14,7 +15,7 @@ class App extends React.Component {
   // pre-render logic
   componentWillMount() {
     //Fetch the json data from data.js on component mount
-    this.props.dispatch({type: 'FETCH_DATA'});
+    //this.props.dispatch({type: 'FETCH_DATA'});
   }
  
   // render
@@ -22,10 +23,10 @@ class App extends React.Component {
     const {children} = this.props;
     return (
       <MuiThemeProvider>
-        <div className="container">
+        <div>
 
           <AppBar
-            title="Title"
+            title="My Profile"
             iconClassNameRight="muidocs-icon-navigation-expand-more"/>
           
           <div>
