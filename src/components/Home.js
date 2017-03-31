@@ -1,5 +1,4 @@
 import React from "react";
-import Questionare from "./common/Questionare";
 
 // Home page component
 export default class Home extends React.Component {
@@ -7,7 +6,8 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="page-home">
-        <Questionare/>
+         <h3>Welcome !</h3>
+
       </div>
     );
   }

@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { ProgressBar } from "react-bootstrap";
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
@@ -21,6 +23,10 @@ class App extends React.Component {
     return (
       <MuiThemeProvider>
         <div className="container">
+
+          <AppBar
+            title="Title"
+            iconClassNameRight="muidocs-icon-navigation-expand-more"/>
           
           <div>
             {children}
